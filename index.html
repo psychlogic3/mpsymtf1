@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PsychLogic — Foundational Mock 1</title>
+<meta name="description" content="PsychLogic Foundational Mock 1 — NIMHANS, CIP, IHBAS & Other M.Psy (RCI) entrance mock test.">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- ================= ACCESS GATE SCREEN ================= -->
+<section id="gateScreen" class="screen">
+  <div class="gate-wrap">
+    <div class="gate-card">
+      <div class="gate-brand">
+        <span class="logo-img logo-full" role="img" aria-label="PsychLogic"></span>
+      </div>
+      <h1 class="gate-title">M.Psy (RCI) Mock Test Series</h1>
+      <p class="gate-sub">NIMHANS, CIP, IHBAS &amp; Other M.Psy (RCI) Entrance Preparation. Enter your name and the access code you were given to begin <b>Mock Test 1</b>.</p>
+
+      <form class="gate-form" id="gateForm" novalidate>
+        <label class="field">
+          <span class="field-label">Your Name</span>
+          <input type="text" id="nameInput" class="input" placeholder="e.g. Rushali" autocomplete="name" required>
+        </label>
+        <label class="field">
+          <span class="field-label">Access Code</span>
+          <input type="text" id="codeInput" class="input mono" placeholder="e.g. psychlogicmpsy0000000" autocomplete="off" required>
+        </label>
+        <div class="gate-error" id="gateError" hidden>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h0"/></svg>
+          <span id="gateErrorText"></span>
+        </div>
+        <button type="submit" class="btn btn-primary gate-btn" id="gateBtn">
+          Unlock Test
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0"/></svg>
+        </button>
+      </form>
+      <p class="gate-note">Each access code is issued individually. Please don't share yours — it's tied to your enrolment.</p>
+    </div>
+    <p class="gate-foot">© PsychLogic · Where Psychology Meets Strategy</p>
+  </div>
+</section>
+
+<!-- ================= START SCREEN ================= -->
+<section id="startScreen" class="screen" hidden>
+  <div class="start-top">
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo-img logo-mark" role="img" aria-label="PsychLogic"></span>
+        <div class="brand-text">
+          <span class="brand-name">Psych<b>Logic</b></span>
+          <span class="brand-tag">Where Psychology Meets Strategy</span>
+        </div>
+      </div>
+      <span class="verified-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Access verified</span>
+    </div>
+  </div>
+
+  <div class="start-main">
+    <div class="wrap">
+      <div class="start-card">
+        <div class="start-hero">
+          <div class="greeting" id="greeting">Hello, <b>there</b> <span class="wave">👋</span></div>
+          <span class="eyebrow">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1L12 16.6 5.7 21l2.3-7.1-6-4.5h7.6z"/></svg>
+            Foundational Mock 1
+          </span>
+          <h1>NIMHANS, CIP, IHBAS &amp; Other M.Psy (RCI) Mock Test Series</h1>
+          <p class="series">A realistic, timed simulation for M.Phil / M.Psych Clinical Psychology entrance preparation — with a full performance analysis and detailed answer explanations after you submit.</p>
+          <div class="hero-meta">
+            <span class="chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><b id="chipQ">100</b> Questions</span>
+            <span class="chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M12 2h0M9 2h6"/></svg><b id="chipT">120</b> Minutes</span>
+            <span class="chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4M4 6v12a2 2 0 0 0 2 2h14v-4M18 12a2 2 0 0 0 0 4h4v-4z"/></svg><b>+1</b> / <b class="neg">&minus;0.25</b> marking</span>
+          </div>
+        </div>
+        <div class="start-body">
+          <div>
+            <div class="inst-title">Examination Instructions</div>
+            <ul class="inst-list">
+              <li><span class="inst-num">1</span><span>This paper has <b>100 questions</b> to be completed in <b>120 minutes</b>. The <b>timer starts</b> the moment you press Start and cannot be paused.</span></li>
+              <li><span class="inst-num">2</span><span><b>Marking scheme:</b> every correct answer earns <b>+1 mark</b>; every wrong answer carries a <b class="neg">&minus;0.25</b> negative mark. Unanswered questions are not penalised.</span></li>
+              <li><span class="inst-num">3</span><span>Use <b>Previous / Next</b> and the <b>question palette</b> to move freely between questions. Your answers are saved as you go, and you may <b>mark questions for review</b>.</span></li>
+              <li><span class="inst-num">4</span><span>Attempt the test in <b>one sitting</b>. The test <b>auto-submits</b> when the timer reaches zero; you can also <b>submit manually</b> at any time.</span></li>
+              <li><span class="inst-num">5</span><span>After submitting, use the tabs at the top of the results: <b>Result Analysis</b> for your subject-wise breakdown and <b>Answers</b> for detailed explanations.</span></li>
+            </ul>
+          </div>
+          <div class="warn-note">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <span>Please attempt this test using a <b>single device</b> only. Logging in or attempting the test from multiple devices may lead to <b>cancellation of your registration</b>.</span>
+          </div>
+          <div class="start-actions">
+            <button class="btn btn-primary" id="startBtn">
+              Start Test
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <span class="marking-note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 8v5M12 17h0M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg> Negative marking is active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEST SCREEN ================= -->
+<section id="testScreen" class="screen" hidden>
+  <div class="test-bar">
+    <div class="test-bar-inner">
+      <div class="brand-mini">
+        <span class="logo-img logo-mark sm" role="img" aria-label="PsychLogic"></span>
+        <div class="brand-text"><span class="brand-name">Psych<b>Logic</b></span></div>
+      </div>
+      <div class="test-bar-right">
+        <div class="timer" id="timer">
+          <span class="t-label">Time Left</span>
+          <span class="t-val" id="timerVal">10:00</span>
+        </div>
+        <button class="btn btn-accent btn-sm" id="submitBtnTop">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="test-body">
+    <div class="q-col">
+      <div class="q-progress">
+        <span class="qnum">Question <b id="curNum">1</b> of <b id="totNum">10</b></span>
+        <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:10%"></div></div>
+      </div>
+      <div class="q-card">
+        <div class="q-tags">
+          <span class="tag tag-subject" id="qSubject">Cognitive Psychology</span>
+          <span class="tag tag-diff" id="qDiff">Easy</span>
+        </div>
+        <div class="q-text" id="qText">Question text</div>
+        <div class="options" id="options"></div>
+        <div class="q-foot">
+          <div class="q-foot-left">
+            <button class="btn btn-ghost btn-sm" id="clearBtn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>
+              Clear
+            </button>
+            <button class="btn btn-sm" id="markBtn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 3h16v18l-8-5-8 5V3z"/></svg>
+              Mark for review
+            </button>
+          </div>
+          <div class="q-foot-right">
+            <button class="btn btn-sm" id="prevBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Previous</button>
+            <button class="btn btn-primary btn-sm" id="nextBtn">Next <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="palette" id="palette">
+      <button class="icon-btn palette-close" id="paletteClose" aria-label="Close palette"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <h3>Question Palette</h3>
+      <p class="p-sub">Tap a number to jump to that question.</p>
+      <div class="p-grid" id="pGrid"></div>
+      <div class="p-legend">
+        <div><span class="swatch answered"></span> Answered</div>
+        <div><span class="swatch notans"></span> Not answered</div>
+        <div><span class="swatch marked"></span> Marked</div>
+        <div><span class="swatch"></span> Not visited</div>
+      </div>
+      <div class="p-summary">
+        <div>Answered<b id="sumAns">0</b></div>
+        <div>Marked<b id="sumMark">0</b></div>
+        <div>Left<b id="sumLeft">10</b></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="mobile-bar">
+    <button class="btn btn-sm" id="prevBtnM"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Prev</button>
+    <button class="btn btn-sm" id="paletteBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Palette</button>
+    <button class="btn btn-primary btn-sm" id="nextBtnM">Next <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</section>
+
+<!-- ================= RESULTS SCREEN ================= -->
+<section id="resultScreen" class="screen" hidden>
+  <div class="result-top">
+    <div class="wrap">
+      <div class="brand-mini">
+        <span class="logo-img logo-mark sm" role="img" aria-label="PsychLogic"></span>
+        <div class="brand-text"><span class="brand-name">Psych<b>Logic</b></span><span class="brand-tag">Result Report</span></div>
+      </div>
+      <button class="btn btn-sm" id="retakeBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg> Retake</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="result-hero">
+      <div class="result-hero-grid">
+        <div class="score-ring">
+          <svg viewBox="0 0 168 168" width="168" height="168" id="scoreRing"></svg>
+          <div class="score-center">
+            <span class="s-pct mono" id="scorePct">0%</span>
+            <span class="s-lbl">Score</span>
+          </div>
+        </div>
+        <div class="result-headline">
+          <div class="report-for" id="reportFor"></div>
+          <span class="verdict" id="verdict">Submitted</span>
+          <h1 id="resultTitle">Here's how you performed</h1>
+          <p id="resultMsg">A full breakdown of your attempt is below.</p>
+          <div class="score-line" id="scoreLine"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="analysis" id="tabAnalysis">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        Result Analysis
+      </button>
+      <button class="tab" data-tab="answers" id="tabAnswers">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Answers
+      </button>
+    </div>
+
+    <!-- ANALYSIS PANEL -->
+    <div class="panel" id="panelAnalysis">
+      <div class="stat-row" id="statRow"></div>
+
+      <div class="cards-2">
+        <div class="card">
+          <h3>Answer Breakdown</h3>
+          <p class="c-sub">How your 10 responses were distributed.</p>
+          <div class="donut-wrap">
+            <svg viewBox="0 0 130 130" width="140" height="140" id="donut"></svg>
+            <div class="donut-legend" id="donutLegend"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Subject-wise Accuracy</h3>
+          <p class="c-sub">Accuracy across the subjects covered in this paper.</p>
+          <div class="bars" id="subjectBars"></div>
+        </div>
+      </div>
+
+      <div class="aw-grid">
+        <div class="card">
+          <h3>Your Strong Areas</h3>
+          <p class="c-sub">Subjects where you scored well.</p>
+          <div class="area-list" id="strongAreas"></div>
+        </div>
+        <div class="card">
+          <h3>Areas to Improve</h3>
+          <p class="c-sub">Subjects that need revision.</p>
+          <div class="area-list" id="weakAreas"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Personalized Improvement Tips</h3>
+        <p class="c-sub">Generated from your actual performance in this attempt.</p>
+        <div class="tips" id="tips"></div>
+      </div>
+    </div>
+
+    <!-- ANSWERS PANEL -->
+    <div class="panel" id="panelAnswers" hidden>
+      <div class="review-filters">
+        <button class="fchip active" data-filter="all">All <span class="cnt" id="cAll"></span></button>
+        <button class="fchip" data-filter="correct">Correct <span class="cnt" id="cCorrect"></span></button>
+        <button class="fchip" data-filter="incorrect">Incorrect <span class="cnt" id="cIncorrect"></span></button>
+        <button class="fchip" data-filter="skipped">Unanswered <span class="cnt" id="cSkipped"></span></button>
+        <span class="fspace"></span>
+        <select class="fsel" id="subjectFilter"><option value="all">All subjects</option></select>
+      </div>
+      <div class="rev-list" id="revList"></div>
+    </div>
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<script src="data/questions.js"></script>
+<script src="data/access-codes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
